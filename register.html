@@ -50,8 +50,10 @@ body {
   margin-bottom: 20px;
 }
 
-.register input.submit {
+input.complete {
   height:60px;
+  display:block;
+  float:right;
   cursor: hand;
   min-width: 155px;
   color: #FFFFFF;
@@ -79,11 +81,13 @@ body {
 }
 
 input.submit:hover,
-input.submit:focus {
+input.submit:focus,
+input.complete:hover,
+input.complete:focus{
     transform: scale(1.1);
 }
 
-input.submit:active {
+input.complete:active {
   color: #545454;
 }
 
@@ -300,12 +304,28 @@ label.avatars > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   <div class="l">choose avatar</div>
   <div class="r">
 	<label class="avatars">
-	  <input type="radio" name="avatar" value="a" />
-      <img src="fb1.jpg">
+	  <input type="radio" name="avatar" value="av1" />
+      <img src="https://cloud.githubusercontent.com/assets/12660898/8145307/d013392e-11d0-11e5-832b-c6fb57b9a25f.jpg">
 	</label>
 	<label class="avatars">
-	  <input type="radio" name="avatar" value="b" />
-      <img src="fb1.jpg">
+	  <input type="radio" name="avatar" value="av2" />
+      <img src="https://cloud.githubusercontent.com/assets/12660898/8145308/d014ab42-11d0-11e5-819e-1c7453d02da1.jpg">
+	</label>
+	<label class="avatars">
+	  <input type="radio" name="avatar" value="av3" />
+      <img src="https://cloud.githubusercontent.com/assets/12660898/8145317/059b8f7e-11d1-11e5-8a5f-e2cada5c9675.jpg">
+	</label>
+	<label class="avatars">
+	  <input type="radio" name="avatar" value="av4" />
+      <img src="https://cloud.githubusercontent.com/assets/12660898/8145311/d0159c1e-11d0-11e5-9d96-6cf97e8e78fa.jpg">
+	</label>
+	<label class="avatars">
+	  <input type="radio" name="avatar" value="av5" />
+      <img src="https://cloud.githubusercontent.com/assets/12660898/8145309/d0152676-11d0-11e5-9dfe-257b638ba848.jpg">
+	</label>
+	<label class="avatars">
+	  <input type="radio" name="avatar" value="av6" />
+      <img src="https://cloud.githubusercontent.com/assets/12660898/8145310/d0154c28-11d0-11e5-9b90-b3cda6de197e.jpg">
 	</label>
     </select>
   </div>
@@ -313,7 +333,7 @@ label.avatars > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   
 		</fieldset>
 	  
-	  
+	  <input type="submit" class="submit" value="complete signup!" />
 	  </form>
 	  
 	</div>
