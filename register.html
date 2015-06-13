@@ -204,6 +204,25 @@ br
 clear: left;
 }
 
+/* AVATARS */
+label.avatars {
+  width:50px;
+  padding-left: 0px;
+  margin-left:0px;
+  margin-top: 10px;
+}
+
+label.avatars > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label.avatars > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label.avatars > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #10A7ee;
+}
 
 .scale_img {
   width:100%;
@@ -280,11 +299,14 @@ clear: left;
   <div class="a">
   <div class="l">choose avatar</div>
   <div class="r">
-	<select name="work_position">
-	  <option value="Sr_Analyst" selected>Sr. Analyst</option>
-	  <option value="Position2">Position 2</option>
-	  <option value="Position3">Position 3</option>
-	  <option value="Position4">Position 4</option>
+	<label class="avatars">
+	  <input type="radio" name="avatar" value="a" />
+      <img src="fb1.jpg">
+	</label>
+	<label class="avatars">
+	  <input type="radio" name="avatar" value="b" />
+      <img src="fb1.jpg">
+	</label>
     </select>
   </div>
 </div>
